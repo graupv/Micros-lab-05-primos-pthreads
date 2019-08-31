@@ -51,6 +51,8 @@ int main()
 
 	*/
 
+	//	cerrar archivo
+	outClientFile.close();
 	//	leer primer archivo
 	ifstream MiArchivo("primos", ios::in);
 
@@ -70,7 +72,7 @@ int main()
 
 	
 
-	//	cerrar archivo
+	//	cerrar archivos
 	outClientFile.close();
 	cout<<"FIN."<<endl';
 }
