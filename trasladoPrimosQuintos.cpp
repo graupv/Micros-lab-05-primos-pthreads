@@ -90,7 +90,7 @@ void *cincoPrimos(void *threadid)
 {
 	int a;
 	int b = 1;
-	int c = 1;
+	int c = 5;
 	ifstream Primos("primos.txt", ios::in);
 	//	abrir archivo que contiene primos
 	if (!Primos)
@@ -117,7 +117,7 @@ void *cincoPrimos(void *threadid)
 			cadaQuinto<<a<<"\n";
 			cadaQuinto.close();
 			b = 1;
-			c++;
+			c += 5;
 		}
 		b++;
 	}
