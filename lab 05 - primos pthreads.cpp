@@ -32,7 +32,7 @@ Gerardo Pineda 18848
 
 int main()
 {
-	if (!ifstream MiArchivo("primos"))
+	if (!ifstream MiArchivo("primos.txt"))
 		//	verificar que existe archivo
 	{
 			cerr<<"No encontramos archivos\n\0";
@@ -41,7 +41,7 @@ int main()
 	}
 	
 	//	crear
-	ofstream MiArchivo("primos", ios::out);
+	ofstream MiArchivo("primos.txt", ios::app);
 
 	/*
 	realmente podriamos meter cada 5to primo al archivo
@@ -58,7 +58,7 @@ int main()
 
 	
 	//	crear 2ndo
-	ofstream MiArchivo("cinco primos", ios::out);
+	ofstream MiArchivo("cinco primos", ios::app);
 
 	/*
 	meter cada 5 "\n" o endl  de primer archivo un numero a
